@@ -1,0 +1,2 @@
+class BootTest < ApplicationRecord
+end

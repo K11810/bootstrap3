@@ -1,0 +1,81 @@
+<div class="container">
+    <header class="header">Bootstrap</header>
+    
+    <div class="alert alert-success">alertクラス</div>
+    
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+        <span class="sr-only">Bootstrap</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap</a>
+    </div>
+    <div id="gnavi" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="">top</a></li>
+        <li><a href="">menu1</a></li>
+        <li><a href="">menu2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Boot Tests<span class="label label-default">challenge!!</h1>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+        <span class="sr-only">Bootstrap</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap
+
+      </a>
+    </div>
+    <div id="gnavi" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="">top</a></li>
+        <li><a href="">menu1</a></li>
+        <li><a href="">menu2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boot_tests.each do |boot_test| %>
+      <tr>
+        <td><%= link_to 'Show', boot_test %></td>
+        <td><%= link_to 'Edit', edit_boot_test_path(boot_test) %></td>
+        <td><%= link_to 'Destroy', boot_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boot Test', new_boot_test_path %>
+
+
+</div>
+
